@@ -1,0 +1,30 @@
+.navbardiv {
+    background-color: white;
+}
+
+.lia {
+    padding-right: 30px;
+}
+
+.cardhome {
+    padding: 10px;
+}
+
+.cardhomehover_25 {
+    transform: rotate(25deg);
+}
+
+.cardhomehover_minus25 {
+    transform: rotate(-25deg);
+}
+
+.cardhomehover_norotation {
+    transform: rotate(0);
+}
+
+
+body {
+    background-color: rgb(207, 207, 207);
+    font-family:'Sawarabi Gothic';
+    font-size: large;
+}

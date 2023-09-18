@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% load static %}
+  <div class="container-lg" id="section1">
+    <div class="container" style="padding-top: 170px; min-height: 700px; display: flex; justify-content: left; align-items: left;">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="container-lg">
+            <div class="row row-cols-1 row-cols-lg-1 g-3">
+                <div class="col p-1">
+                  <div class="card shadow-sm">
+                    <img src="{{ produs.pic.pic_obj.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ produs.name }}</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h3>Nume Produs:</h3>
+          <p>{{produs.name}}</p>
+          <h3>Material:</h3>
+          <p>{{produs.material}}</p>
+          <h3>Info:</h3>
+          <p>{{produs.info}}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
